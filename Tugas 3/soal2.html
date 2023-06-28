@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lightning Hospital</title>
+    <style>
+        /* Styling for navbar */
+        .navbar {
+            background-color: #40128B;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .navbar li {
+            float: left;
+            position: relative;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .navbar .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .navbar li:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Styling for content */
+        .content {
+            padding: 20px;
+            text-align: center; /* Tengahkan elemen di dalam .content */
+        }
+
+        /* Styling for footer */
+        .footer {
+            background-color: #40128B;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Styling for form group */
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left; /* Kembalikan teks form ke kiri */
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #40128B;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Data</a>
+                <div class="dropdown-content">
+                    <a href="#">History</a>
+                    <a href="#">Mission</a>
+                    <a href="#">Vision</a>
+                </div>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Lightning Hospital</h1>
+        <p>Segera daftarkan nama pasien agar segera ditangani lebih lanjut oleh pihak rumah sakit</p>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="usia">Usia:</label>
+            <input type="number" id="usia" usia="usia" placeholder="Enter your usia">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="telpon">No. Telpon:</label>
+            <input type="text" id="telpon" name="telpon" placeholder="Enter your telpon">
+        </div>
+
+        <div class="form-group">
+            <label for="keluhan">Keluhan:</label>
+            <textarea id="keluhan" name="keluhan" placeholder="Enter your keluhan"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" placeholder="Enter your alamat"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 Lightning Hospital.
+    </div>
+</body>
+</html>
