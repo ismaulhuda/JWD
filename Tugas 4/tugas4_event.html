@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Studi Kasus Event</title>
+  <style>
+    #myDiv {
+      width: 200px;
+      height: 200px;
+      background-color: #8B1874;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      var name = document.forms["myForm"]["name"].value;
+      if (name == "") {
+        alert("Nama harus diisi");
+        return false;
+      }
+    }
+    function changeColor() {
+      var div = document.getElementById("myDiv");
+      div.style.backgroundColor = "blue";
+    }
+    function resetColor() {
+      var div = document.getElementById("myDiv");
+      div.style.backgroundColor = "red";
+    }
+  </script>
+</head>
+<body>
+  <h1>Studi Kasus Event</h1>
+
+  <form name="myForm" onsubmit="return validateForm()">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="myDiv" onmouseover="changeColor()" onmouseout="resetColor()" ondblclick="alert('Double-clicked!')">
+    <p>Klik dua kali pada kotak ini.</p>
+  </div>
+
+  <script>
+    window.onload = function() {
+      alert("Halaman telah dimuat sepenuhnya");
+    };
+  </script>
+</body>
+</html>
