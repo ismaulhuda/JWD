@@ -1,0 +1,17 @@
+body{
+    font-family: open sans;
+}
+
+.navbar{
+    padding-left: 110px;
+    background-color: #967E76;
+}
+
+.content .judul{
+    padding-top: 10px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.content .data{
+    padding-top: 10px;
+}
