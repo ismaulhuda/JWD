@@ -1,0 +1,25 @@
+body {
+    background: #eaeaea;
+    font-family: open sans;
+}
+
+.navbar{
+    padding-left: 3px;
+    background-color: #8062D6;
+}
+
+.content .judul{
+    padding-top: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.content .data{
+    padding-top: 10px;
+}
+
+.container-fluid{
+    padding-left: 100px;
+}
+
+
+
